@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_alert_rule_manager,stock.alert.rule manager,model_stock_alert_rule,stock.group_stock_manager,1,1,1,1
+access_stock_alert_rule_user,stock.alert.rule user,model_stock_alert_rule,stock.group_stock_user,1,0,0,0
+access_stock_alert_log_manager,stock.alert.log manager,model_stock_alert_log,stock.group_stock_manager,1,1,1,0
+access_stock_alert_log_user,stock.alert.log user,model_stock_alert_log,stock.group_stock_user,1,0,0,0

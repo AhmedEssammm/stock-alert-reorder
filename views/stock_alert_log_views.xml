@@ -1,0 +1,53 @@
+<odoo>
+    <record id="view_stock_alert_log_list" model="ir.ui.view">
+        <field name="name">stock.alert.log.list</field>
+        <field name="model">stock.alert.log</field>
+        <field name="arch" type="xml">
+            <tree string="Stock Alert Logs" create="false" delete="false">
+                <field name="date"/>
+                <field name="product_id"/>
+                <field name="rule_id"/>
+                <field name="qty_on_hand"/>
+                <field name="min_qty"/>
+                <field name="state"
+                       decoration-warning="state == 'alerted'"
+                       decoration-success="state == 'ordered'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_stock_alert_log_form" model="ir.ui.view">
+        <field name="name">stock.alert.log.form</field>
+        <field name="model">stock.alert.log</field>
+        <field name="arch" type="xml">
+            <form string="Stock Alert Log" create="false" delete="false">
+                <sheet>
+                    <group>
+                        <group string="Alert Details">
+                            <field name="date" readonly="1"/>
+                            <field name="product_id" readonly="1"/>
+                            <field name="rule_id" readonly="1"/>
+                        </group>
+                        <group string="Quantities">
+                            <field name="qty_on_hand" readonly="1"/>
+                            <field name="min_qty" readonly="1"/>
+                            <field name="state" readonly="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_stock_alert_log" model="ir.actions.act_window">
+        <field name="name">Alert Logs</field>
+        <field name="res_model">stock.alert.log</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_stock_alert_log"
+              name="Alert Logs"
+              parent="stock.menu_stock_config_settings"
+              action="action_stock_alert_log"
+              sequence="51"/>
+</odoo>
