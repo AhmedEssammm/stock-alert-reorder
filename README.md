@@ -6,11 +6,12 @@
 ![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen?style=flat-square)
  
 A custom **Odoo 17** module that extends the default inventory management system with intelligent, configurable stock alerting, automated reorder rule generation, purchase order drafting, and a real-time OWL dashboard widget for critical stock visibility.
- ![img_1.png](img_1.png)
+<img width="1920" height="867" alt="Dashboard" src="https://github.com/user-attachments/assets/a2a1412d-a302-4691-8335-d84e01a82b56" />
+
 ---
  
 ## 🚀 Features
- [static](static)
+
 - **Per-product or per-category stock alert thresholds** — define minimum stock levels on a specific product or an entire product category via a dedicated `stock.alert.rule` model, giving warehouse managers flexible, fine-grained control
 - **ORM-based stock detection** — batch queries against `stock.quant` using `read_group` detect all products at or below their threshold in a single database call, with no N+1 patterns
 - **Idempotent cron job** — a scheduled action runs detection daily with built-in guards to prevent duplicate alert logs for the same product on the same day
