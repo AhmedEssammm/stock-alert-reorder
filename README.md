@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen?style=flat-square)
  
 A custom **Odoo 17** module that extends the default inventory management system with intelligent, configurable stock alerting, automated reorder rule generation, purchase order drafting, and a real-time OWL dashboard widget for critical stock visibility.
-<img width="1920" height="867" alt="Dashboard" src="https://github.com/user-attachments/assets/a2a1412d-a302-4691-8335-d84e01a82b56" />
+<img width="1920" height="869" alt="Dashboard" src="https://github.com/user-attachments/assets/8268e3e0-3ec6-4b9c-94ac-d3c07f496e2c" />
 
 ---
  
